@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="54676eaf-65f7-4e4f-9457-850190d47a1e" name="Default Changelist" comment="Init commit&#10;- Architecture of the project and main webpage created">
+      <change afterPath="$PROJECT_DIR$/Rapport slides.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/US_Elections.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vendor/Config/constants.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vendor/Factories/PDOMySQL.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vendor/autoloader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/split-files-date.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sh/count.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stats.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/sheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/sheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/general.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/initial_data/us_election_splitted/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rapport.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/js/d3.layout.cloud.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1k93YjYsiPScqX4k7pPcjx3R218" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="54676eaf-65f7-4e4f-9457-850190d47a1e" name="Default Changelist" comment="" />
+      <created>1605099032463</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605099032463</updated>
+      <workItem from="1605099035002" duration="7400000" />
+      <workItem from="1605545980984" duration="23765000" />
+    </task>
+    <task id="LOCAL-00001" summary="Init commit&#10;- Architecture of the project and main webpage created">
+      <created>1605104789754</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605104789756</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Init commit&#10;- Architecture of the project and main webpage created" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init commit&#10;- Architecture of the project and main webpage created" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="464" y="194" key="NewPhpClassDialog" timestamp="1605548691985">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="464" y="194" key="NewPhpClassDialog/0.23.1440.877/-245.-1057.1920.1057@0.23.1440.877" timestamp="1605548691985" />
+    <state x="543" y="392" key="NewPhpFileDialog" timestamp="1605549213760">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="543" y="392" key="NewPhpFileDialog/0.23.1440.877/-245.-1057.1920.1057@0.23.1440.877" timestamp="1605549213760" />
+    <state width="500" height="445" key="SwitcherDM" timestamp="1605102383087">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="500" height="445" key="SwitcherDM/0.23.1440.877/-245.-1057.1920.1057@0.23.1440.877" timestamp="1605102383087" />
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1605105117786">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877/-245.-1057.1920.1057@0.23.1440.877" timestamp="1605105117786" />
+    <state x="385" y="223" width="670" height="676" key="search.everywhere.popup" timestamp="1605565576730">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="385" y="223" width="670" height="676" key="search.everywhere.popup/0.23.1440.877/-245.-1057.1920.1057@0.23.1440.877" timestamp="1605565576730" />
+  </component>
+</project>

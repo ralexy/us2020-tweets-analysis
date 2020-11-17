@@ -7,10 +7,109 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-<h1>#US ELECTIONS 2020<br />Trump VS Biden</h1>
+<header>
+    <h1>US Election 2020 - Trump VS Biden</h1>
+</header>
+<div class="inline">
+    <h2>Choose day(s) for stats </h2>
+    <form id="dates-picker" method="post" action="stats.php">
+        <select name="date1" autocomplete="off">
+            <option selected disabled="true" value="">Begin date</option>
+            <optgroup label="July">
+                <option value="2020-07-01">2020-07-01</option>
+                <option value="2020-07-02">2020-07-02</option>
+            </optgroup>
+            <optgroup label="August">
+                <option value="2020-08-01">2020-08-01</option>
+                <option value="2020-08-02">2020-08-02</option>
+                <option value="2020-08-03">2020-08-03</option>
+                <option value="2020-08-04">2020-08-04</option>
+                <option value="2020-08-05">2020-08-05</option>
+                <option value="2020-08-07">2020-08-07</option>
+                <option value="2020-08-08">2020-08-08</option>
+                <option value="2020-08-09">2020-08-09</option>
+                <option value="2020-08-10">2020-08-10</option>
+                <option value="2020-08-11">2020-08-11</option>
+                <option value="2020-08-12">2020-08-12</option>
+                <option value="2020-08-13">2020-08-13</option>
+                <option value="2020-08-26">2020-08-26</option>
+                <option value="2020-08-27">2020-08-27</option>
+                <option value="2020-08-28">2020-08-28</option>
+                <option value="2020-08-29">2020-08-29</option>
+                <option value="2020-08-30">2020-08-30</option>
+                <option value="2020-08-31">2020-08-31</option>
+            </optgroup>
+            <optgroup label="September">
+                <option value="2020-09-01">2020-09-01</option>
+                <option value="2020-09-02">2020-09-02</option>
+                <option value="2020-09-03">2020-09-03</option>
+                <option value="2020-09-04">2020-09-04</option>
+                <option value="2020-09-05">2020-09-05</option>
+                <option value="2020-09-14">2020-09-14</option>
+                <option value="2020-09-15">2020-09-15</option>
+                <option value="2020-09-21">2020-09-21</option>
+                <option value="2020-09-22">2020-09-22</option>
+                <option value="2020-09-24">2020-09-24</option>
+                <option value="2020-09-29">2020-09-29</option>
+            </optgroup>
+            <optgroup label="October">
+                <option value="2020-10-01">2020-10-01</option>
+                <option value="2020-10-02">2020-10-02</option>
+            </optgroup>
+        </select>
 
-<h2>Choose a day for stats or <a href="#">explore general trends</a></h2>
+        <select name="date2" autocomplete="off">
+            <option selected disabled="true" value="">End date</option>
+            <optgroup label="July">
+                <option value="2020-07-01">2020-07-01</option>
+                <option value="2020-07-02">2020-07-02</option>
+            </optgroup>
+            <optgroup label="August">
+                <option value="2020-08-01">2020-08-01</option>
+                <option value="2020-08-02">2020-08-02</option>
+                <option value="2020-08-03">2020-08-03</option>
+                <option value="2020-08-04">2020-08-04</option>
+                <option value="2020-08-05">2020-08-05</option>
+                <option value="2020-08-07">2020-08-07</option>
+                <option value="2020-08-08">2020-08-08</option>
+                <option value="2020-08-09">2020-08-09</option>
+                <option value="2020-08-10">2020-08-10</option>
+                <option value="2020-08-11">2020-08-11</option>
+                <option value="2020-08-12">2020-08-12</option>
+                <option value="2020-08-13">2020-08-13</option>
+                <option value="2020-08-26">2020-08-26</option>
+                <option value="2020-08-27">2020-08-27</option>
+                <option value="2020-08-28">2020-08-28</option>
+                <option value="2020-08-29">2020-08-29</option>
+                <option value="2020-08-30">2020-08-30</option>
+                <option value="2020-08-31">2020-08-31</option>
+            </optgroup>
+            <optgroup label="September">
+                <option value="2020-09-01">2020-09-01</option>
+                <option value="2020-09-02">2020-09-02</option>
+                <option value="2020-09-03">2020-09-03</option>
+                <option value="2020-09-04">2020-09-04</option>
+                <option value="2020-09-05">2020-09-05</option>
+                <option value="2020-09-14">2020-09-14</option>
+                <option value="2020-09-15">2020-09-15</option>
+                <option value="2020-09-21">2020-09-21</option>
+                <option value="2020-09-22">2020-09-22</option>
+                <option value="2020-09-24">2020-09-24</option>
+                <option value="2020-09-29">2020-09-29</option>
+            </optgroup>
+            <optgroup label="October">
+                <option value="2020-10-01">2020-10-01</option>
+                <option value="2020-10-02">2020-10-02</option>
+            </optgroup>
+        </select>
 
+        <noscript><input type="submit" class="submitBtn" value="OK"></noscript>
+        <!-- CSS Hack, hidden because JS can't access to element in noscript... !-->
+        <input type="submit" class="submitBtn" style="display: none;" value="OK">
+    </form>
+</div>
+
+<h2 class="spacer smaller">You also can <a href="stats.php?date1=2020-07-01&date2=2020-10-02">explore general trends</a></h2>
 
 <h3><a href="#july">July 2020 ▾</a></h3>
 <div id="july">
@@ -24,41 +123,18 @@
         <th>Sat</th>
         <th>Sun</th>
     </tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
     <tr>
+        <td><a href="stats.php?date1=2020-07-27">27</a></td>
+        <td><a href="stats.php?date1=2020-07-28">28</a></td>
+        <td><a href="stats.php?date1=2020-07-29">29</a></td>
+        <td><a href="stats.php?date1=2020-07-30">30</a></td>
+        <td><a href="stats.php?date1=2020-07-31">31</a></td>
         <td></td>
         <td></td>
-        <td><a href="#">1</a></td>
-        <td><a href="#">2</a></td>
-        <td><a href="#">3</a></td>
-        <td><a href="#">4</a></td>
-        <td><a href="#">5</a></td>
-    </tr>
-    <tr>
-        <td><a href="#">6</a></td>
-        <td><a href="#">7</a></td>
-        <td><a href="#">8</a></td>
-        <td><a href="#">9</a></td>
-        <td><a href="#">10</a></td>
-        <td><a href="#">11</a></td>
-        <td><a href="#">12</a></td>
-    </tr>
-    <tr>
-        <td><a href="#">13</a></td>
-        <td><a href="#">14</a></td>
-        <td><a href="#">15</a></td>
-        <td><a href="#">16</a></td>
-        <td><a href="#">17</a></td>
-        <td><a href="#">18</a></td>
-        <td><a href="#">19</a></td>
-    </tr>
-    <tr>
-        <td><a href="#">20</a></td>
-        <td><a href="#">21</a></td>
-        <td><a href="#">22</a></td>
-        <td><a href="#">23</a></td>
-        <td><a href="#">24</a></td>
-        <td><a href="#">25</a></td>
-        <td><a href="#">26</a></td>
     </tr>
 </table>
 </div>
@@ -81,54 +157,48 @@
             <td></td>
             <td></td>
             <td></td>
-            <td><a href="#">1</a></td>
-            <td><a href="#">2</a></td>
+            <td><a href="stats.php?date1=2020-08-01">1</a></td>
+            <td><a href="stats.php?date1=2020-08-02">2</a></td>
         </tr>
         <tr>
-            <td><a href="#">3</a></td>
-            <td><a href="#">4</a></td>
-            <td><a href="#">5</a></td>
-            <td><a href="#">6</a></td>
-            <td><a href="#">7</a></td>
-            <td><a href="#">8</a></td>
-            <td><a href="#">9</a></td>
+            <td><a href="stats.php?date1=2020-08-03">3</a></td>
+            <td><a href="stats.php?date1=2020-08-04">4</a></td>
+            <td><a href="stats.php?date1=2020-08-05">5</a></td>
+            <td></td>
+            <td><a href="stats.php?date1=2020-08-07">7</a></td>
+            <td><a href="stats.php?date1=2020-08-08">8</a></td>
+            <td><a href="stats.php?date1=2020-08-09">9</a></td>
         </tr>
         <tr>
-            <td><a href="#">10</a></td>
-            <td><a href="#">11</a></td>
-            <td><a href="#">12</a></td>
-            <td><a href="#">13</a></td>
-            <td><a href="#">14</a></td>
-            <td><a href="#">15</a></td>
-            <td><a href="#">16</a></td>
+            <td><a href="stats.php?date1=2020-08-10">10</a></td>
+            <td><a href="stats.php?date1=2020-08-11">11</a></td>
+            <td><a href="stats.php?date1=2020-08-12">12</a></td>
+            <td><a href="stats.php?date1=2020-08-13">13</a></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
-            <td><a href="#">17</a></td>
-            <td><a href="#">18</a></td>
-            <td><a href="#">19</a></td>
-            <td><a href="#">20</a></td>
-            <td><a href="#">21</a></td>
-            <td><a href="#">22</a></td>
-            <td><a href="#">23</a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
-            <td><a href="#">24</a></td>
-            <td><a href="#">25</a></td>
-            <td><a href="#">26</a></td>
-            <td><a href="#">27</a></td>
-            <td><a href="#">28</a></td>
-            <td><a href="#">29</a></td>
-            <td><a href="#">30</a></td>
+            <td></td>
+            <td></td>
+            <td><a href="stats.php?date1=2020-08-26">26</a></td>
+            <td><a href="stats.php?date1=2020-08-27">27</a></td>
+            <td><a href="stats.php?date1=2020-08-28">28</a></td>
+            <td><a href="stats.php?date1=2020-08-29">29</a></td>
+            <td><a href="stats.php?date1=2020-08-30">30</a></td>
         </tr>
 
         <tr>
-            <td><a href="#">31</a></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td><a href="stats.php?date1=2020-08-31">31</a></td>
         </tr>
     </table>
 </div>
@@ -147,45 +217,45 @@
         </tr>
         <tr>
             <td></td>
-            <td><a href="#">1</a></td>
-            <td><a href="#">2</a></td>
-            <td><a href="#">3</a></td>
-            <td><a href="#">4</a></td>
-            <td><a href="#">5</a></td>
-            <td><a href="#">6</a></td>
+            <td><a href="stats.php?date1=2020-09-01">1</a></td>
+            <td><a href="stats.php?date1=2020-09-02">2</a></td>
+            <td><a href="stats.php?date1=2020-09-03">3</a></td>
+            <td><a href="stats.php?date1=2020-09-04">4</a></td>
+            <td><a href="stats.php?date1=2020-09-05">5</a></td>
+            <td></td>
         </tr>
         <tr>
-            <td><a href="#">7</a></td>
-            <td><a href="#">8</a></td>
-            <td><a href="#">9</a></td>
-            <td><a href="#">10</a></td>
-            <td><a href="#">11</a></td>
-            <td><a href="#">12</a></td>
-            <td><a href="#">13</a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
-            <td><a href="#">14</a></td>
-            <td><a href="#">15</a></td>
-            <td><a href="#">16</a></td>
-            <td><a href="#">17</a></td>
-            <td><a href="#">18</a></td>
-            <td><a href="#">19</a></td>
-            <td><a href="#">20</a></td>
+            <td><a href="stats.php?date1=2020-09-14">14</a></td>
+            <td><a href="stats.php?date1=2020-09-15">15</a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
-            <td><a href="#">21</a></td>
-            <td><a href="#">22</a></td>
-            <td><a href="#">23</a></td>
-            <td><a href="#">24</a></td>
-            <td><a href="#">25</a></td>
-            <td><a href="#">26</a></td>
-            <td><a href="#">27</a></td>
+            <td><a href="stats.php?date1=2020-09-21">21</a></td>
+            <td><a href="stats.php?date1=2020-09-22">22</a></td>
+            <td></td>
+            <td><a href="stats.php?date1=2020-09-24">24</a></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
 
         <tr>
-            <td><a href="#">28</a></td>
-            <td><a href="#">29</a></td>
-            <td><a href="#">30</a></td>
+            <td></td>
+            <td><a href="stats.php?date1=2020-09-29">29</a></td>
+            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -210,13 +280,49 @@
             <td></td>
             <td></td>
             <td></td>
-            <td><a href="#">1</a></td>
-            <td><a href="#">2</a></td>
+            <td><a href="stats.php?date1=2020-10-01">1</a></td>
+            <td><a href="stats.php?date1=2020-10-02">2</a></td>
             <td></td>
             <td></td>
         </tr>
     </table>
 </div>
+<script>
+    let selects = document.getElementsByTagName('select');
+    let submitBtn = document.getElementsByClassName('submitBtn')[0];
 
+    function submitForm() {
+        submitBtn.click();
+    }
+
+    function checkDates() {
+        if(selects[0].value.length > 0 && selects[1].value.length > 0) {
+            let d1 = selects[0].value;
+            let d2 = selects[1].value;
+
+            // Safari fix because he can't work with regex and he can't instanciate dates correctly (stupid browser T_T' )...
+            while(d1.indexOf('-') !== -1 || d2.indexOf('-') !== -1) {
+                d1 = d1.replace('-', '');
+                d2 = d2.replace('-', '');
+            }
+
+
+            // We return true only if the second date is the most recent one
+            if(d1 <= d2) {
+                submitForm();
+            }
+        }
+
+        return false;
+    }
+
+    selects[0].addEventListener('change', function(e) {
+        checkDates();
+    });
+
+    selects[1].addEventListener('change', function(e) {
+        checkDates();
+    });
+</script>
 </body>
 </html>

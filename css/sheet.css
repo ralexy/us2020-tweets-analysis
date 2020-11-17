@@ -3,6 +3,35 @@ body {
     text-align: center;
     font-family: 'IBM Plex Sans', sans-serif;
     color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 80px;
+    background: #333;
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-weight: normal;
+    font-size: 20px;
+    vertical-align: middle;
+    display: inline;
+    line-height: 80px;
+    vertical-align: middle;
+    color: white;
+    text-decoration: none;
+}
+
+header h1 a, header h1 a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+header h1 a:hover {
+    text-decoration: underline;
 }
 
 h1 {
@@ -12,8 +41,51 @@ h1 {
 
 h2 {
     font-size: 3vw;
+}
+
+.smaller {
+    font-size: 2em;
+}
+
+.spacer {
     margin-bottom: 80px;
 }
+
+.inline * {
+    display: inline;
+    vertical-align: middle;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 150px; height: 50px;
+    border: 2px solid purple;
+    border-radius: 3px;
+    color: white;
+    font-size: 1em;
+    padding: 0 10px;
+    background: 98% no-repeat url("../images/calendar_icon_w.png") transparent;
+    background-size: 25px 25px;
+}
+
+select:hover, input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: purple;
+}
+
+input[type="submit"] {
+    width: 40px; height: 50px;
+    background: none;
+    border: 2px solid purple;
+    border-radius: 3px;
+    color: white;
+    font-size: 1em;
+    position: relative;
+    bottom: 2px;
+}
+
 
 h2 a, h2 a:visited {
     color: white;
